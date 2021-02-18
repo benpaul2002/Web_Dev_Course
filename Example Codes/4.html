@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors2</title>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        p.blue {
+            color: blue;
+        }
+        p.green {
+            color: green;
+        }
+        article > p {
+            font-weight: bold;
+        }
+        article p {
+            font-size: 120%;
+        }
+        p.bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors - 2</h1>
+    <p class="blue">This is blue!</p>
+    <p class="green">This is green!</p>
+    <p class="blue">This is blue!</p>
+    <p class="green">This is green!</p>
+    <br>
+    <h2>Child Selectors</h2>
+    <article>
+        <p class="blue">This is a child paragraph!</p>
+        <div>
+            <p class="green">This is a grandchild paragraph! Note that the font isn't bold like previous paragraph. This is because only direct child elements were made bold</p>
+        </div>
+    </article>
+    <br>
+    <h2>Multiple Classes</h2>
+    <p class="blue bold">This paragraph has two classes applied to it</p>
+</body>
+</html>
